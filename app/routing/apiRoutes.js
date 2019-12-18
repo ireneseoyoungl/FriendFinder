@@ -1,9 +1,9 @@
 const express = require('express');
 const Router = express.Router();
+const friends = require('../data/friends');
 
 Router.get('/', (req, res) => {
-  console.log(req);
-  res.send('success');
+  res.send(friends);
 });
 
 module.exports = Router;

@@ -4,7 +4,291 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <title>Friend Finder</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1 class="col-sm-12 text-center">About You</h1>
+      </div>
+      <hr />
+      <div class="row">
+        <label class="col-sm-12">
+          <div class="form-group">
+            <label for="userName">About You (Required)</label>
+            <input
+              type="text"
+              class="form-control"
+              id="userName"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="userPhoto">Link to Photo Image (Required)</label>
+            <input
+              type="text"
+              class="form-control"
+              id="userPhoto"
+              placeholder="Enter photo link"
+            />
+          </div>
+          <hr />
+          <div class="row">
+            <h4 class="col-sm-12"><strong>Question 1</strong></h4>
+          </div>
+          <div class="row">
+            <p class="col-sm-12">
+              Your mind is always buzzing with unexplored ideas and plans.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <select class="custom-select my-1 mr-sm-2" id="q1">
+                <option selected value="">Select an option</option>
+                <option value="1">1 (Strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly disagree)</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row">
+            <h4 class="col-sm-12"><strong>Question 2</strong></h4>
+          </div>
+          <div class="row">
+            <p class="col-sm-12">
+              Generally speaking, you rely more on your experience than your
+              imagination.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <select class="custom-select my-1 mr-sm-2" id="q2">
+                <option selected value="">Select an option</option>
+                <option value="1">1 (Strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly disagree)</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row">
+            <h4 class="col-sm-12"><strong>Question 3</strong></h4>
+          </div>
+          <div class="row">
+            <p class="col-sm-12">
+              You find it easy to stay relaxed and focused even when there is
+              some pressure.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <select class="custom-select my-1 mr-sm-2" id="q3">
+                <option selected value="">Select an option</option>
+                <option value="1">1 (Strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly disagree)</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row">
+            <h4 class="col-sm-12"><strong>Question 4</strong></h4>
+          </div>
+          <div class="row">
+            <p class="col-sm-12">
+              You rarely do something just out of sheer curiosity.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <select class="custom-select my-1 mr-sm-2" id="q4">
+                <option selected value="">Select an option</option>
+                <option value="1">1 (Strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly disagree)</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row">
+            <h4 class="col-sm-12"><strong>Question 5</strong></h4>
+          </div>
+          <div class="row">
+            <p class="col-sm-12">
+              People can rarely upset you.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <select class="custom-select my-1 mr-sm-2" id="q5">
+                <option selected value="">Select an option</option>
+                <option value="1">1 (Strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly disagree)</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row">
+            <h4 class="col-sm-12"><strong>Question 6</strong></h4>
+          </div>
+          <div class="row">
+            <p class="col-sm-12">
+              It is often difficult for you to relate to other people’s
+              feelings.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <select class="custom-select my-1 mr-sm-2" id="q6">
+                <option selected value="">Select an option</option>
+                <option value="1">1 (Strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly disagree)</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row">
+            <h4 class="col-sm-12"><strong>Question 7</strong></h4>
+          </div>
+          <div class="row">
+            <p class="col-sm-12">
+              In a discussion, truth should be more important than people’s
+              sensitivities.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <select class="custom-select my-1 mr-sm-2" id="q7">
+                <option selected value="">Select an option</option>
+                <option value="1">1 (Strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly disagree)</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row">
+            <h4 class="col-sm-12"><strong>Question 8</strong></h4>
+          </div>
+          <div class="row">
+            <p class="col-sm-12">
+              You rarely get carried away by fantasies and ideas.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <select class="custom-select my-1 mr-sm-2" id="q8">
+                <option selected value="">Select an option</option>
+                <option value="1">1 (Strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly disagree)</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row">
+            <h4 class="col-sm-12"><strong>Question 9</strong></h4>
+          </div>
+          <div class="row">
+            <p class="col-sm-12">
+              You think that everyone’s views should be respected regardless of
+              whether they are supported by facts or not.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <select class="custom-select my-1 mr-sm-2" id="q9">
+                <option selected value="">Select an option</option>
+                <option value="1">1 (Strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly disagree)</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row">
+            <h4 class="col-sm-12"><strong>Question 10</strong></h4>
+          </div>
+          <div class="row">
+            <p class="col-sm-12">
+              You feel more energetic after spending time with a group of
+              people.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <select class="custom-select my-1 mr-sm-2" id="q10">
+                <option selected value="">Select an option</option>
+                <option value="1">1 (Strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly disagree)</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+          <button
+            type="submit"
+            class="btn btn-primary col-sm-12"
+            id="submit-btn"
+          >
+            Submit
+          </button>
+        </label>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./survey.js"></script>
+  </body>
 </html>
