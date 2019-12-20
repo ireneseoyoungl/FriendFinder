@@ -40,17 +40,12 @@ const friends = [
     scores: ['2', '3', '2', '3', '3', '1', '1', '3', '2', '2']
   },
   {
-    name: 'irene',
-    photo: 'yahoo.com',
-    scores: ['5', '4', '3', '3', '2', '4', '3', '3', '4', '2']
-  },
-  {
     name: 'Alex Sous',
     photo: 'https://friend-finder-fsf.herokuapp.com/survey',
     scores: ['2', '2', '2', '2', '2', '2', '2', '2', '3', '2']
   },
   {
-    name: 'Alex Sous',
+    name: 'James Franco',
     photo: 'https://friend-finder-fsf.herokuapp.com/survey',
     scores: ['2', '2', '2', '2', '2', '2', '2', '2', '3', '2']
   }
