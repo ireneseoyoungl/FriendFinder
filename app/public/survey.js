@@ -5,15 +5,8 @@ document.getElementById('submit-btn').addEventListener('click', () => {
     document.getElementById('q1').value,
     document.getElementById('q2').value,
     document.getElementById('q3').value,
-    document.getElementById('q4').value,
-    document.getElementById('q5').value,
-    document.getElementById('q6').value,
-    document.getElementById('q7').value,
-    document.getElementById('q8').value,
-    document.getElementById('q9').value,
-    document.getElementById('q10').value
+    document.getElementById('q4').value
   ];
-  console.log('hi', userName, userPhoto, userChoice);
   if (userChoice.includes('') || userName === '' || userPhoto === '') {
     alert('Please fill out all fields!');
   } else {
@@ -61,7 +54,6 @@ document.getElementById('submit-btn').addEventListener('click', () => {
       photo: userPhoto,
       scores: userChoice
     };
-    console.log(newUser, newUser.scores);
     fetch('/api')
       .then(res => res.json())
       .then(result => {
@@ -70,13 +62,21 @@ document.getElementById('submit-btn').addEventListener('click', () => {
         let matchIndex;
         resultArr.forEach((result, j) => {
           let loopMin = 0;
-          for (let i = 0; i < 10; i++) {
+          for (let i = 0; i < 4; i++) {
             loopMin += Math.abs(result.scores[i] - userChoice[i]);
           }
           if (currentMin === false || loopMin <= currentMin) {
             currentMin = loopMin;
             matchIndex = j;
           }
+        });
+        fetch('/api', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(newUser)
         });
         console.log(`Match is ${matchIndex} ${resultArr[matchIndex].name}`);
         document.getElementById('match-name').innerHTML =
